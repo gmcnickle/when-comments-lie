@@ -1,10 +1,10 @@
-# 🧠 When Comments Lie
+# When Comments Lie
 
 A growing collection of short write-ups exploring real-world examples where **code comments mislead**, misunderstand, or outright lie — and what we can learn from them.
 
 Inspired by the principle that **code should explain itself**, this series walks through cases where intentions were good, but assumptions about code behavior didn’t hold up.
 
-## 📚 Entry #1: Django ORM – `.all()` vs `.first()`
+## Entry #1: Django ORM – `.all()` vs `.first()`
 
 > _“Using `.all()` instead of `.first()` to avoid an extra database query...”_
 
@@ -18,7 +18,7 @@ It covers:
 - How `select_related()` can collapse two queries into one
 - A full runnable test harness to explore the behavior yourself
 
-## 🛠️ About This Series
+## About This Series
 
 This repo will serve as a home for:
 - 🧾 Clean, runnable examples based on real-world code
