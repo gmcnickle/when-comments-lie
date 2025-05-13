@@ -95,7 +95,7 @@ However, in larger tables or when the related field is **optional or infrequentl
 - Always profile or check query logs if performance matters.
 
 ## Final Notes
-In the end, the original comment — though well-intentioned — was both incorrect and misleading. As always, trust the queries, not the assumptions.
+In the end, the original comment — though well-intentioned — was both incorrect and misleading. As always, trust the code, not the assumptions.
 
 We’ve updated these properties in the model to use `select_related()` and `.first()`, improving both clarity and efficiency. Thanks to whoever left the comment for giving us a fun little mystery to unravel.
 
