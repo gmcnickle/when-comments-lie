@@ -87,17 +87,17 @@ There’s no value in deferring the lookup — it’s guaranteed to happen.
 However, in larger tables or when the related field is **optional or infrequently accessed**, lazy loading (and potentially even `.only()` or `.defer()`) may be more appropriate.
 
 
-## 🔍 Key Takeaways
+## Key Takeaways
 
 - Don’t trust comments blindly — inspect what the code (and the ORM) actually does.
 - `.first()` is not inherently inefficient. It's often more optimal than `.all()` when only one result is needed.
 - `select_related()` is your friend when you know you’ll access related data immediately.
 - Always profile or check query logs if performance matters.
 
-## 🧹 Final Notes
+## Final Notes
 In the end, the original comment — though well-intentioned — was both incorrect and misleading. As always, trust the queries, not the assumptions.
 
 We’ve updated these properties in the model to use `select_related()` and `.first()`, improving both clarity and efficiency. Thanks to whoever left the comment for giving us a fun little mystery to unravel.
 
-I have provided some sample code to illustrate this issue.  The sample code is the functional equivalent of what I discovered in production, though obivously streamlined for simplicity and re-written to protect corporate IP rights.
+I have provided some [sample code](https://github.com/gmcnickle/when-comments-lie/tree/main/codesamples/all-vs-first) to illustrate this issue.  The sample code is the functional equivalent of what I discovered in production, though obivously streamlined for simplicity and re-written to protect corporate IP rights.
 
